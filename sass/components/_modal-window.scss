@@ -24,18 +24,22 @@
     border: 1px solid #555555;
     padding: 0;
     transition: border-color var(--transition-duration-and-func);
+
+&:hover,
+&:hover{
+    background-color: #2196F3;
+
+&:hover .modal-close-btn-icon,
+&:hover .modal-close-btn-icon{
+    fill: green;
 }
 
-.modal-close-btn:hover,
-.modal-close-btn:hover{
-    background-color: #2196F3;
 }
+
+}
+
 
 .modal-close-btn-icon{
     transition: fill var(--transition-duration-and-func);
 }
 
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:hover .modal-close-btn-icon{
-    fill: green;
-}

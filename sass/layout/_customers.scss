@@ -2,13 +2,15 @@
     fill: #AFB1B8;
 
     transition: fill var(--transition-duration-and-func);
-}
 
-
-.customers-social-list-link:hover .customers-social-list-icon,
-.customers-social-list-link:focus .customers-social-list-icon{
+.customers-social-list-link:hover &,
+.customers-social-list-link:focus &{
 fill: #2196F3;
 }
+}
+
+
+
 
 
 .customers-social-list{
@@ -22,17 +24,17 @@ fill: #2196F3;
 
 
 .customers-social-list-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 170px;
     height: 92px;
     background-color: #FFFFFF;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border var(--transition-duration-and-func);
-}
-.customers-social-list-link:hover ,
-.customers-social-list-link:focus {
-    border: 1px solid #2196F3 ;
+
+    &:hover ,
+    &:focus {
+        border: 1px solid #2196F3 ;
+    }
+
 }

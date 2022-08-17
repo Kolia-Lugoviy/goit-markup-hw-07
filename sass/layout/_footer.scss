@@ -5,11 +5,9 @@
 }
 
 .footer-address{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    @include font ($fs: 14px, $fw: 400, $lh: 24px);
     letter-spacing: 0.03em;
-    color: #FFFFFF;
+    color: #ffffff;
     font-style: normal;
 }
 .footer-address-address{
@@ -21,16 +19,13 @@
 
 }
 .footer-mail{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    @include font ($fs: 14px, $fw: 400, $lh: 24px);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-tel{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    @include font ($fs: 14px, $fw: 400, $lh: 24px);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 
@@ -38,9 +33,7 @@
 
 .footer-web-white{
     font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
+    @include font ($fs: 26px, $fw: 700, $lh: 31px);
     letter-spacing: 0.03em;
     color: #ffffff;
     display: block;
@@ -51,15 +44,10 @@
 .footer-ul-li:not(:last-child){
     margin-bottom: 9px;
 }
-.footer-social{
-
-}
 
 .footer-social-p{
 margin-bottom: 20px;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.1;
+@include font ($fs: 14px, $fw: 700, $lh: 16px);
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #FFFFFF;
@@ -69,34 +57,29 @@ color: #FFFFFF;
     background: #2196F3;
 }
 .footer-social-list-link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.1);
     transition: background-color var(--transition-duration-and-func);
-}
-.footer-social-list-link:hover .work-social-list-icon,
-.footer-social-list-link:focus .work-social-list-icon{
+
+&:hover .work-social-list-icon,
+&:focus .work-social-list-icon{
 fill: #ffffff;
 }
+}
+
 
 
 .footer-title-signature{
     margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
+    @include font ($fs: 14px, $fw: 700, $lh: 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
     }
     
-
-.footer-modal-form{
-}
 
 .footer-email-signature{
     display: flex;
@@ -105,8 +88,8 @@ fill: #ffffff;
 
 .footer-modal-form-input-desc{
     display: flex;
-    Font-size: 14px;
-    Line-height: 1.1;
+    font-size: 14px;
+    line-height: 1.1;
     margin-bottom: 20px;
     color: #FFFFFF;
     }
@@ -126,12 +109,14 @@ fill: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     transition: color var(--transition-duration-and-func);
-    }
-    
-    .footer-modal-form-submit:hover, 
-    .footer-modal-form-submit:focus {
+
+    &:hover, 
+    &:focus {
         color: #000000;
     }    
+    }
+    
+
 
 .footer-button-icon{
 margin-left: 10px;

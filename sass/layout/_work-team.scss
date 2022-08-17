@@ -2,9 +2,8 @@
     background: #F5F4FA;
 }
 .title-work{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+    @include font ($fs: 36px, $fw: 700, $lh: 44px);
+
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -37,9 +36,7 @@ padding-bottom: 30px;
 
 
 .list-work{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 2.2;
+    @include font ($fs: 16px, $fw: 500, $lh: 36px);
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -58,13 +55,15 @@ padding-bottom: 30px;
 .work-social-list-icon{
     fill: #AFB1B8;
     transition: fill var(--transition-duration-and-func);
-}
 
-
-.work-social-list-link:hover .work-social-list-icon,
-.work-social-list-link:focus .work-social-list-icon{
+.work-social-list-link:hover &,
+.work-social-list-link:focus &{
 fill: #ffffff;
 }
+}
+
+
+
 
 
 .work-social-list{
@@ -82,9 +81,11 @@ fill: #ffffff;
     border-radius: 50%;
     background-color: #FFFFFF;
     transition: background-color var(--transition-duration-and-func);
+
+    &:hover,
+    &:focus{
+        background: #2196F3;
+    }
+
 }
 
-.work-social-list-link:hover,
-.work-social-list-link:focus{
-    background: #2196F3;
-}

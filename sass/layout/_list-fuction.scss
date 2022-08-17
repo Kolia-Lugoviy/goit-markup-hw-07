@@ -1,8 +1,5 @@
 .list{
-
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
+    @include font ($fs: 14px, $fw: 400, $lh: 24px);
     letter-spacing: 0.03em;
     color: #757575;
     display: flex;
@@ -10,24 +7,31 @@
 
 .list-title-li{
     width: 270px;
+
+    &:not(:nth-child(4n)){
+        margin-right: 30px;
+    }
 }
 
-.list-title-li:not(:nth-child(4n)){
-    margin-right: 30px;
-}
+
 
 .list-a-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %align;
     width: 270px;
     height: 120px;
     background-color: #FFFFFF;
+
+&:hover .list-a-image-icon,
+&:focus .list-a-image-icon{
+fill: #2196F3;
+}
 }
 
 .list-a-image-icon{
     fill: #212121;
     transition: fill var(--transition-duration-and-func);
+
+
 }
 
 .list-a-image{
@@ -38,30 +42,18 @@ transition: fill var(--transition-duration-and-func);
 }
 
 
-.list-a-image:hover .list-a-image-icon,
-.list-a-image:focus .list-a-image-icon{
-fill: #2196F3;
-}
-
 .list-title{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.2;
+    @include font ($fs: 14px, $fw: 700, $lh: 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
 }
 .list-title-p{
 margin-top: 10px;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.7;
+@include font ($fs: 14px, $fw: 400, $lh: 24px);
 letter-spacing: 0.03em;
 color: #757575;
 }
-
-
-
 
 
 .section-img{
