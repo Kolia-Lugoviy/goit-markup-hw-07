@@ -9,10 +9,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
-    
 }
+
+.header-container-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header-web{
     margin-right: 93px;
     font-family: 'Raleway', sans-serif;
@@ -48,6 +52,20 @@ header{
 .header-list{
     @include font ($fw: 500);
     letter-spacing: 0.02em
+}
+
+.header-container-ul__header-li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header-social-ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-social-ul__header-social-li:not(:last-child) {
+    margin-right: 50px;
 }
 
 

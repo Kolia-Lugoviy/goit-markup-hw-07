@@ -266,6 +266,12 @@ header {
   justify-content: space-between;
 }
 
+.header-container-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header-web {
   margin-right: 93px;
   font-family: "Raleway", sans-serif;
@@ -309,6 +315,20 @@ header {
   font-weight: 500;
   line-height: 1.1428571429;
   letter-spacing: 0.02em;
+}
+
+.header-container-ul__header-li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-social-ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-social-ul__header-social-li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .header-li:not(:last-child) {
@@ -383,10 +403,10 @@ header {
   display: flex;
 }
 
-.list-title-li {
+.list_title-li {
   width: 270px;
 }
-.list-title-li:not(:nth-child(4n)) {
+.list_title-li:not(:nth-child(4n)) {
   margin-right: 30px;
 }
 
