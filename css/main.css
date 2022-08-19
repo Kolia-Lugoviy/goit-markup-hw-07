@@ -255,18 +255,18 @@ header {
   list-style-type: none;
 }
 
-.header-header {
+.header-main {
   padding-bottom: 24px;
   padding-top: 24px;
 }
 
-.header-top {
+.group {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-top {
+.header-container-ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -321,7 +321,7 @@ header {
   margin-right: 50px;
 }
 
-.header-contact {
+.header-social-ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -358,7 +358,7 @@ header {
   transition: color var(--transition-duration-and-func);
 }
 
-.header-cont {
+.header-contact {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1428571429;
