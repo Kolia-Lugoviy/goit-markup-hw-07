@@ -260,13 +260,13 @@ header {
   padding-top: 24px;
 }
 
-.header-container {
+.header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-container-ul {
+.header-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -321,7 +321,7 @@ header {
   margin-right: 50px;
 }
 
-.header-social-ul {
+.header-contact {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -358,7 +358,7 @@ header {
   transition: color var(--transition-duration-and-func);
 }
 
-.header-contact {
+.header-cont {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1428571429;
